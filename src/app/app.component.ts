@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Hello from BridgeLabz';
-  logoUrl = 'https://www.bridgelabz.com/assets/images/BridgeLabz%20New%20Logo.svg';
+  logoUrl: string = 'https://www.bridgelabz.com/assets/images/BridgeLabz%20New%20Logo.svg';
+
+  openBridgeLabz() {
+    window.open('https://www.bridgelabz.com', '_blank');
+  }
 }
